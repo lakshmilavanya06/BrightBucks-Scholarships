@@ -21,9 +21,6 @@ It categorizes scholarships into **Government** and **Private** sections and pro
    ```bash
    git clone https://github.com/your-username/BrightBucks-Scholarships.git
 
-## ![Screenshot](![Screenshot 2025-04-18 140837](https://github.com/user-attachments/assets/18c54807-0ac8-4c72-a616-e22280aecaf6)
-)
-
 ## Created By
 - Gorle Lakshmi Lavanya
 - Kandula Sowmya
