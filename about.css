@@ -1,0 +1,111 @@
+/* About Page CSS */
+
+/* General Body Styles */
+body {
+    font-family: 'Georgia', serif; /* Use the same font as the theme */
+    margin: 20px;
+    padding: 0;
+    color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main Heading Styles */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366; /* Consistent with theme */
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+/* Section Headings */
+.headings{
+    font-weight: bold; /* Make section headings bold */
+    font-size: 24px; /* Slightly larger font size */
+    color: #003366; /* Consistent color */
+    margin-top: 20px; /* Space above section headings */
+}
+
+/* Paragraph Styles */
+p {
+    max-width: 600px; /* Limit width for readability */
+    text-align: center; /* Center text */
+    font-size: 18px; /* Consistent font size */
+    color: black; /* Text color */
+    line-height: 1.6; /* Improve readability */
+    margin: 10px auto; /* Center paragraphs with auto margins */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #003366; /* Consistent with theme */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Credits Section */
+.footer-credits {
+    margin-top: 20px; /* Space above credits */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:azure
+}
+
+/* Tagline Styles */
+.tagline {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif; /* Consistent font */
+    text-align: center; 
+    margin: 10px auto; /* Center with auto margins */
+    color: rgb(16, 21, 59); /* Consistent color */
+    letter-spacing: 1px;
+}
+
+/* Main Centering Styles */
+.main-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.credits-new {
+      color: #241d4c;
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures particles stay behind content */
+    background: linear-gradient(135deg, #6e99c4 0%, #0066cc 100%);
+}
+
+.content {
+    position: relative; /* Ensures content stays above particles */
+}
+body {
+    background: linear-gradient(135deg,  #6e99c4 , #0066cc );
+    background-attachment: fixed;
+}
