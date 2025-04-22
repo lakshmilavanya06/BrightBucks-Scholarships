@@ -16,10 +16,9 @@ It categorizes scholarships into **Government** and **Private** sections and pro
 - CSS
 - JavaScript
 
-## 🚀 How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/BrightBucks-Scholarships.git
+## 🚀Deployment Link
+ - https://bright-bucks-scholarships.vercel.app/
+ - https://brightbucks05.netlify.app/
 
 ## Created By
 - Gorle Lakshmi Lavanya
