@@ -109,3 +109,52 @@ body {
     background: linear-gradient(135deg,  #6e99c4 , #0066cc );
     background-attachment: fixed;
 }
+/* Profile Styles */
+.profile1 {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 20px;
+}.profile2 {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid #003366;
+}
+
+.footer-credits {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+/* Adjust the credits-new class to work with new layout */
+.credits-new {
+    
+    color: #241d4c;
+    margin: 0; /* Remove default margins */
+}
+
+.credits-link {
+    text-decoration: none;
+    color: #241d4c;
+    transition: color 0.3s;
+}
+
+.credits-link:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+.ppt{
+    float:right
+}
