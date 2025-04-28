@@ -1,3 +1,4 @@
+
 .tagline {
     font-size: 20px;
     /*font-weight: bold;*/
@@ -11,28 +12,157 @@
     z-index: 1000;
     margin-bottom: -10px;
 }
-body {
-    font-family: 'Georgia', serif;
-    margin: 20px;
-    padding: 0;
-    color: #333;
-   
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
+section {
+    display: block;
+    unicode-bidi: isolate;
 }
-.contact-us h2 {
-    margin-bottom: 10px;
-    color: black;
-    font-size: 20px;
-    letter-spacing: 2px;
+/* Website title link styles */
+.website-title {
+    text-decoration: none;
+    text-align: center;
+    color: inherit; /* Keeps the original text color */
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
-.contact-us p {
-    font-size: 18px;
-    color: black;
-    line-height: 20%;
+.hi{ margin-top: 100px; 
+    float: left;
 }
 
+/* Hover effect */
+.website-title:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light highlight */
+    transform: scale(1.02); /* Slight enlargement */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Active/click effect */
+.website-title:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(0.98);
+}
+
+/* Focus effect (for keyboard navigation) */
+.website-title:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 3px;
+}
+
+/* Keep your existing styles and add these */
+.brand-name {
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.website-title:hover .brand-name {
+    color: #37afce; /* Change color on hover if desired */
+}
+
+.logo-in-heading {
+    transition: all 0.3s ease;
+}
+
+.website-title:hover .logo-in-heading {
+    transform: rotate(5deg); /* Optional: Add a slight tilt to logo */
+}
+/* Navigation Bar Styles */
+.navbar {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+.tagline-mini {
+    font-size: 22px;
+    opacity: 0.8;
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 5px;
+}/* Unified navigation styles */
+.nav-item {
+    text-decoration: none;
+    color: inherit;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Hover effect for all nav items */
+.nav-item:hover {
+    background-color: #37afce;;
+    transform: translateY(-1px);
+}
+
+/* Active/click effect */
+.nav-item:active {
+    background-color: rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+/* Current page highlight */
+.nav-item.current {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Site title specific styles */
+.site-title {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+.site-title:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar specific styles */
+.navbar .nav-item {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Keep your existing styles and add these */
+.logo-in-heading {
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover .logo-in-heading {
+    transform: rotate(5deg);
+}
+
+.brand-name {
+    font-weight: bold;
+}
 h1 {
     text-align: center;
     color: #ffffff;
@@ -253,5 +383,113 @@ html {
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    margin: 40px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
 }
 
+.section-title {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #37afce;
+    margin: 15px auto 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-box {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.student-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #37afce;
+    margin-right: 15px;
+}
+
+.student-details h3 {
+    margin: 0;
+    color: #003366;
+    font-size: 1.2rem;
+}
+
+.stars {
+    color: #FFD700;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.testimonial-text {
+    color: #333;
+    line-height: 1.6;
+    font-style: italic;
+    padding: 10px 0;
+    border-top: 1px dashed #e0e0e0;
+    border-bottom: 1px dashed #e0e0e0;
+    margin: 15px 0;
+}
+
+.scholarship-info {
+    color: #37afce;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.scholarship-info i {
+    margin-right: 5px;
+}
+.hie{
+    float:right;
+    height: 200 px;
+    width :180 px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-box {
+        padding: 20px;
+    }
+}
