@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BrightBucks 🎓</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <div id="particles-js"></div>
+    <div class="content">
+        <h1>
+            <a href="index.html" class="website-title">
+                <img src="BrightBucks.png" alt="BrightBucks Logo" class="logo-in-heading">
+                <span class="brand-name">BrightBucks 🎓</span>
+            </a>
+            <span class="tagline-mini">Turning Dreams into Degrees</span>
+        </h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="scholarships.html" class="nav-item">Scholarships</a></li>
+                <li><a href="https://drive.google.com/file/d/1ocnvE0A5vKWvGLhQP14xJAFaXiv-GErt/view?usp=sharing" class="nav-item">Learn More</a></li>
+            
+            </ul>
+        </nav>
+        
+    <p class="tagline"><marquee scrollamount="10">Don't let fee stop you!</marquee></p>
+    <!-- Qualification Selection -->
+     <img src="/BrightBucks-Scholarships-main/images/ima.png" class="hie">
+     <div class="form-box">
+        <div class="form-group">
+    <label for="qualification">Educational Qualification:</label>
+    <select id="qualification">
+        <option value="">-- Select --</option>
+        <option value="10th">10th Grade</option>
+        <option value="12th">12th Grade</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="postgraduate">Postgraduate</option>
+    </select><br>
+   
+</div>
+   
+<div class="form-group">
+    <!-- Scholarship Type Selection -->
+    <label for="type">Scholarship Type:</label>
+    <select id="type">
+        <option value="">-- Select --</option>
+        <option value="government">Government</option>
+        <option value="private">Non-Government</option>
+    </select>
+</div>
+</div>
+    <!-- Button Container -->
+    <div class="button-container">
+        <button onclick="findScholarships()">Find Scholarships</button>
+    </div>
+
+    <!-- Display Scholarship List -->
+    <div id="scholarshipList" class="scholarship-list"></div>
+    
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
