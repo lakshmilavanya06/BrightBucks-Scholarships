@@ -483,11 +483,10 @@ html {
 }
 
 .image-section {
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  justify-content: flex-end; /* This pushes the image to the right */
-  align-items: center;       /* Vertically center the image */
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
 }
 
 .image-section img {
@@ -497,24 +496,6 @@ html {
   object-fit: cover;
 }
 
-.form-image-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 5%;
-  gap: 30px;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
-@media (max-width: 768px) {
-  .form-image-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .form-box, .image-section {
-    max-width: 100%;
-  }
-}
 
 
 /* Responsive Design */
