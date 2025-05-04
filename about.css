@@ -92,6 +92,40 @@ p {
 .credits-new {
       color: #241d4c;
 }
+/* VIIT Logo at Bottom */
+.viit-image {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #003366;
+}
+
+.viit {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+.viit:hover {
+    transform: scale(1.05);
+}
+
+.viit-link {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.viit-link:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
 #particles-js {
     position: fixed;
     width: 100%;
@@ -158,29 +192,3 @@ body {
 .ppt{
     float:right
 }
-.viit-image {
-   /* position: fixed; /* or 'absolute' if you don't want it to stay on scroll */
-    bottom: 20px; /* Distance from bottom */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    text-align: center;
-    width: 100%;
-}
-
-.viit {
-    width: 120px; /* Adjust logo size */
-    height: auto;
-    margin-bottom: 8px; /* Space between logo and text */
-}
-
-.viit-link {
-    text-decoration: none;
-    color: #241d4c;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-}
-.viit-link:hover {
-    color: #003366;
-    text-decoration: underline;
-}
-
