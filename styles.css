@@ -487,6 +487,8 @@ html {
   display: inline-block;
   vertical-align: top;
   text-align: right;
+  float: right;
+
 }
 
 .image-section img {
