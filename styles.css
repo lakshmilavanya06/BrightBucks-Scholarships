@@ -413,12 +413,12 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     margin: 0 auto;
 }
 
 .testimonial-box {
-   background: rgba(255, 255, 255, 0.5);
+   background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
