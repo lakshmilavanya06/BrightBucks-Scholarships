@@ -488,7 +488,7 @@ html {
   top: 220px; /* Adjust this value to move up/down */
 }
 .container img {
-  width: 400px; /* adjust size as needed */
+  width: 500px; /* adjust size as needed */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
