@@ -489,7 +489,7 @@ html {
 }
 .container img {
   width: 500px; /* adjust size as needed */
-  height: 200px;
+  height: 2600px;
   border-radius: 10px;
   object-fit: cover;
 }
