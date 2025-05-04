@@ -479,18 +479,17 @@ html {
     margin-right: 5px;
 }
 .image-section {
-    width: 50%;              /* Adjust width as needed */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically if needed */
-    padding: 20px;           /* Optional spacing */
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;      /* Optional spacing */
 }
 
 .image-section img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;       /* Ensures image fills without distortion */
-    border-radius: 10px;     /* Optional: smooth corners */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;   /* Optional: smooth corners */
 }
 
 
