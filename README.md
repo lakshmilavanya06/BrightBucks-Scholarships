@@ -17,7 +17,6 @@ It categorizes scholarships into **Government** and **Private** sections and pro
 - JavaScript
 
 ## 🚀Deployment Link
- - https://bright-bucks-scholarships.vercel.app/
  - https://brightbucks05.netlify.app/
 
 ## Created By
