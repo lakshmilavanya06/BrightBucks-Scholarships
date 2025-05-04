@@ -490,7 +490,7 @@ html {
   max-width: 100%;
   width: 100%;
   border-radius: 10px;
-  text-align: left;         /* ensure text is left-aligned */
+  text-align: right;         /* ensure text is left-aligned */
 }
 .container img {
   width: 150px;
