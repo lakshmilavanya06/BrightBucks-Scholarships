@@ -113,13 +113,13 @@ p {
 
 .viit-link {
     text-decoration: none;
-    color: #003366;
+    color: #241d4c;
     font-weight: bold;
     font-size: 16px;
 }
 
 .viit-link:hover {
-    color: #0066cc;
+    color: #003366;
     text-decoration: underline;
 }
 #particles-js {
