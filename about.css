@@ -105,6 +105,7 @@ p {
     height: auto;
     margin-bottom: 10px;
     transition: transform 0.3s;
+    font-size: 50px;
 }
 
 .viit:hover {
