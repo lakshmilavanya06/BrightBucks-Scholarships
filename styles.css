@@ -485,8 +485,8 @@ html {
 .container {
  display: flex;
   justify-content: flex-end;
-  padding: 300px; /* optional spacing */  
-  margin-top: -460px;
+  padding: 280px; /* optional spacing */  
+  margin-top: -470px;
 }
 .container img {
   width: 400px; /* adjust size as needed */
