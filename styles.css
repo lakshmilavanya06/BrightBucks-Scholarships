@@ -486,8 +486,8 @@ html {
   flex: 1;
   max-width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: right;
+  justify-content: flex-end; /* This pushes the image to the right */
+  align-items: center;       /* Vertically center the image */
 }
 
 .image-section img {
@@ -495,8 +495,8 @@ html {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  align-items: right;
 }
+
 .form-image-wrapper {
   display: flex;
   justify-content: space-between;
