@@ -493,3 +493,7 @@ html {
         padding: 20px;
     }
 }
+.nav-item:nth-child(1), .nav-item:nth-child(2) {
+    font-size: 20px; /* Larger font size for Home and About */
+    font-weight: bold; /* Make text bold */
+}
