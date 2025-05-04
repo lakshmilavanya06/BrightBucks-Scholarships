@@ -200,12 +200,15 @@ button {
     transition: background-color 0.3s;
 }
 
-.button-container{
+.button-container {
     padding: 20px;
     border-radius: 8px;
     font-size: 32px;
     letter-spacing: 2px;
+    text-align: left; /* ensures content aligns left */
+    width: 100%;       /* spans full width of form box */
 }
+
 
 button:hover {
     text-align: center;
