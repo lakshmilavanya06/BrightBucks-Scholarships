@@ -483,10 +483,9 @@ html {
 }
 
 .container {
- display: flex;
-  justify-content: flex-end;
-  padding: 300px; /* optional spacing */  
-  margin-top: -465px;
+  position: absolute;
+  right: 50px; /* Adjust this value to move left/right */
+  top: 200px; /* Adjust this value to move up/down */
 }
 .container img {
   width: 400px; /* adjust size as needed */
