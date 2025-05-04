@@ -91,6 +91,8 @@ p {
 
 .credits-new {
       color: #241d4c;
+      align-items: center;
+      text-align: center;
 }
 #particles-js {
     position: fixed;
