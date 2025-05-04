@@ -413,6 +413,7 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
 }
 
