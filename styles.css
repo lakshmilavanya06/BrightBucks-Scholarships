@@ -497,6 +497,11 @@ html {
   border-radius: 10px;
   object-fit: cover;
 }
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 
 
