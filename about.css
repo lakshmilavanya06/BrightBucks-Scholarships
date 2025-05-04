@@ -159,31 +159,27 @@ body {
     float:right
 }
 .viit-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
+    position: fixed; /* or 'absolute' if you don't want it to stay on scroll */
+    bottom: 20px; /* Distance from bottom */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%); /* Center horizontally */
     text-align: center;
+    width: 100%;
 }
 
 .viit {
-    width: 150px; /* Adjust size as needed */
+    width: 120px; /* Adjust logo size */
     height: auto;
-    margin-bottom: 10px; /* Space between image and text */
+    margin-bottom: 8px; /* Space between logo and text */
 }
 
 .viit-link {
     text-decoration: none;
-    color: #0066cc; /* Change to your preferred color */
+    color: #0066cc;
     font-weight: bold;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
 }
 
 .viit-link:hover {
     text-decoration: underline;
-    color: #004499; /* Darker shade for hover */
 }
