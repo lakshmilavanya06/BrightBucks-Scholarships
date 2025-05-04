@@ -159,7 +159,7 @@ body {
     float:right
 }
 .viit-image {
-    position: fixed; /* or 'absolute' if you don't want it to stay on scroll */
+   /* position: fixed; /* or 'absolute' if you don't want it to stay on scroll */
     bottom: 20px; /* Distance from bottom */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
@@ -175,11 +175,12 @@ body {
 
 .viit-link {
     text-decoration: none;
-    color: #0066cc;
+    color: #241d4c;
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
-
 .viit-link:hover {
+    color: #003366;
     text-decoration: underline;
 }
+
