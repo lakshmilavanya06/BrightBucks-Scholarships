@@ -499,8 +499,18 @@ html {
 }
 .container {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  float: right;
+    
 }
 
 
