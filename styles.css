@@ -486,12 +486,12 @@ html {
  display: flex;
   justify-content: flex-end;
   padding: 230px; /* optional spacing */  
-  margin-top: -480px;
+  margin-top: -465px;
 }
 .container img {
-  width: 300px; /* adjust size as needed */
+  width: 400px; /* adjust size as needed */
   height: auto;
-  border-radius: 10px;
+  border-radius: 30px;
   object-fit: cover;
 }
 
