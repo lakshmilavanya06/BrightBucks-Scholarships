@@ -478,11 +478,21 @@ html {
 .scholarship-info i {
     margin-right: 5px;
 }
-.hie{
-    float:right;
-    height: 30px;
-    width: 50px;
+.image-section {
+    width: 50%;              /* Adjust width as needed */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically if needed */
+    padding: 20px;           /* Optional spacing */
 }
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;       /* Ensures image fills without distortion */
+    border-radius: 10px;     /* Optional: smooth corners */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
