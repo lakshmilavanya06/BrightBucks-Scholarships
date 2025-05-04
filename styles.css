@@ -485,7 +485,7 @@ html {
 .container {
   position: absolute;
   right: 90px; /* Adjust this value to move left/right */
-  top: 220px; /* Adjust this value to move up/down */
+  top: 280px; /* Adjust this value to move up/down */
 }
 .container img {
   width: 500px; /* adjust size as needed */
