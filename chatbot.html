@@ -119,7 +119,7 @@
     if (msg.includes("help"))
       return "Sure! You can ask me about scholarships, eligibility, how to apply, deadlines, and more.";
 
-    if (msg.includes("scholarship") && msg.includes("eligibility"))
+    if (msg.includes("scholarship") || msg.includes("eligibility"))
       return "To check your eligibility, please select your qualification (10th, UG, PG) on the homepage.";
 
     if (msg.includes("how to apply") || msg.includes("apply for scholarship"))
