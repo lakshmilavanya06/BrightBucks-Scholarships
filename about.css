@@ -89,9 +89,6 @@ p {
     text-align: center;
 }
 
-.credits-new {
-      color: #241d4c;
-}
 /* VIIT Logo Section (appears after profiles) */
 .viit-image {
     text-align: center;
@@ -176,7 +173,8 @@ body {
      text-align: center;
       text-decoration: none;
       transition: transform 0.3s;
-    
+     margin-top: 10px;
+      font-weight: 600;
     color: #241d4c;
     margin: 0; /* Remove default margins */
 }
