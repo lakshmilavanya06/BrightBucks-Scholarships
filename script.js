@@ -600,7 +600,7 @@ function findScholarships() {
             item.innerHTML = `
                 <h3>${scholarship.name}</h3>
                 <p>${scholarship.description}</p>
-                <button onclick="openDetails('${scholarship.name}', '${scholarship.description}', '${scholarship.criteria}', '${scholarship.link}')">View Details</button>
+                <button onclick="openDetails('${scholarship.name}', '${scholarship.description}', '${scholarship.criteria}', '${scholarship.Registration}','${scholarship.link}')">View Details</button>
             `;
             scholarshipList.appendChild(item);
         });
@@ -631,7 +631,7 @@ function showAllScholarships(type) {
             item.innerHTML = `
                 <h3>${scholarship.name}</h3>
                 <p>${scholarship.description}</p>
-                <button onclick="openDetails('${scholarship.name}', '${scholarship.description}', '${scholarship.criteria}', '${scholarship.link}')">View Details</button>
+                <button onclick="openDetails('${scholarship.name}', '${scholarship.description}', '${scholarship.criteria}', '${scholarship.Registration}','${scholarship.link}')">View Details</button>
             `;
             scholarshipList.appendChild(item);
         });
@@ -640,7 +640,7 @@ function showAllScholarships(type) {
     }
 }
 
-function openDetails(name, description, criteria, link) {
+function openDetails(name, description, criteria,Registration, link) {
     const newWindow = window.open("", "_blank");
     if (newWindow) {
         newWindow.document.body.innerHTML = `
@@ -700,6 +700,7 @@ function openDetails(name, description, criteria, link) {
                 <h1>${name}</h1>
                 <p><strong>Description:</strong> ${description}</p>
                 <p><strong>Eligibility Criteria:</strong> ${criteria}</p>
+                 <p><strong>Registration Details:</strong> ${Registration}</p>
                 <p><a href="${link}" target="_blank">Click here to apply</a></p>
                 <button onclick="window.close()">Back</button>
             </div>
