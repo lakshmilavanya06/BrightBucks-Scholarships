@@ -144,17 +144,22 @@ body {
 .profile1 {
     align-items: center;
      display: flex;
-      justify-content: space-evenly;
-      width: 100vw;
-      height: 100vh;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 20px;
 }
+.profile:hover {
+      transform: scale(1.05);
+    }
 
 .profile-img {
-     width: 100px; /* 5 images × 18vw + spacing fits the screen */
-      height: 100px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #003366;
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0 auto;
 }
 
 .footer-credits {
@@ -168,6 +173,9 @@ body {
 
 /* Adjust the credits-new class to work with new layout */
 .credits-new {
+     text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s;
     
     color: #241d4c;
     margin: 0; /* Remove default margins */
