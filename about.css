@@ -142,20 +142,17 @@ body {
 }
 /* Profile Styles */
 .profile1 {
-    display: inline-flex;
     align-items: center;
     margin: 10px 20px;
-      justify-content: space-between;
-      align-items: center;
+     display: flex;
+      justify-content: space-evenly;
       width: 100vw;
       height: 100vh;
-      padding: 0 2vw;
-      box-sizing: border-box;
 }
 
 .profile-img {
-     width: 18vw; /* 5 images × 18vw + spacing fits the screen */
-      height: auto;
+     width: 100px; /* 5 images × 18vw + spacing fits the screen */
+      height: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
