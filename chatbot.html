@@ -6,65 +6,81 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #ffffff;
+      background: #f4faff;
       margin: 0;
       padding: 0;
     }
+
     .chat-container {
       max-width: 600px;
       margin: 50px auto;
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: #ffffff;
       padding: 20px;
-      border-radius: 10px;
-      border: 2px solid #007BFF;
+      border-radius: 12px;
+      border: 2px solid #003366;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
     }
+
     .messages {
       height: 400px;
       overflow-y: auto;
-      border: 1px solid #007BFF;
+      border: 1px solid #0055aa;
       padding: 10px;
       margin-bottom: 10px;
-      border-radius: 5px;
-      background: #f0f8ff;
+      border-radius: 8px;
+      background: #e6f0ff;
     }
+
     .message {
       margin: 10px 0;
-      padding: 8px 12px;
-      border-radius: 5px;
+      padding: 10px 15px;
+      border-radius: 6px;
       max-width: 80%;
+      line-height: 1.5;
     }
+
     .user {
       text-align: right;
-      background-color: #007BFF;
-      color: white;
+      background-color: #0055aa;
+      color: #ffffff;
       margin-left: auto;
     }
+
     .bot {
       text-align: left;
-      background-color: #e6f0ff;
-      color: rgba(255, 255, 255, 0.3);
+      background-color: #dceeff;
+      color: #003366;
       margin-right: auto;
     }
+
     input[type="text"] {
       width: 75%;
       padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #007BFF;
+      border-radius: 6px;
+      border: 1px solid #0055aa;
       outline: none;
+      font-size: 16px;
     }
+
     button {
       padding: 10px 15px;
-      background-color: #007BFF;
+      background-color: #003366;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
+      font-size: 16px;
     }
+
     button:hover {
-      background-color: #0056b3;
+      background-color: #002244;
+    }
+
+    h2 {
+      color: #003366;
+      text-align: center;
     }
   </style>
-</head>
 <body>
 
 <div class="chat-container">
