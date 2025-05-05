@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .chat-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #007BFF;
+    }
+    .messages {
+      height: 400px;
+      overflow-y: auto;
+      border: 1px solid #007BFF;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background: #f0f8ff;
+    }
+    .message {
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 5px;
+      max-width: 80%;
+    }
+    .user {
+      text-align: right;
+      background-color: #007BFF;
+      color: white;
+      margin-left: auto;
+    }
+    .bot {
+      text-align: left;
+      background-color: #e6f0ff;
+      color: #003366;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      width: 75%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #007BFF;
+      outline: none;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-container">
+  <h2 style="color:#007BFF;">AI Chatbot</h2>
+  <div class="messages" id="chatBox"></div>
+  <input type="text" id="userInput" placeholder="Type your message..." />
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+  function sendMessage() {
+    const input = document.getElementById('userInput');
+    const message = input.value.trim();
+    if (message === '') return;
+
+    const chatBox = document.getElementById('chatBox');
+    chatBox.innerHTML += `<div class="message user">${message}</div>`;
+
+    const botReply = getBotReply(message);
+    setTimeout(() => {
+      chatBox.innerHTML += `<div class="message bot">${botReply}</div>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }, 500);
+
+    input.value = '';
+  }
+
+  function getBotReply(input) {
+    if (input.toLowerCase().includes("hello")) return "Hi there! How can I help you?";
+    if (input.toLowerCase().includes("help")) return "Sure, what do you need help with?";
+    return "I'm a basic chatbot. Try saying 'hello' or 'help'.";
+  }
+</script>
+
+</body>
+</html>
