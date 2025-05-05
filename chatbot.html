@@ -90,7 +90,7 @@
   <button onclick="sendMessage()">Send</button>
 </div>
 
-<script>
+<!--<script>
   function sendMessage() {
     const input = document.getElementById('userInput');
     const message = input.value.trim();
@@ -113,7 +113,53 @@
     if (input.toLowerCase().includes("help")) return "Sure, what do you need help with?";
     return "I'm a basic chatbot. Try saying 'hello' or 'help'.";
   }
-</script>
+</script>-->
+   <script>
+        function addMessage(sender, text) {
+            const chat = document.getElementById('chat');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            messageDiv.textContent = text;
+            chat.appendChild(messageDiv);
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const url = document.getElementById('urlInput').value;
+            const question = document.getElementById('questionInput').value;
+            
+            if (!url) {
+                alert('Please enter a URL');
+                return;
+            }
+            
+            addMessage('user', `URL: ${url}\nQuestion: ${question || 'Tell me about this website'}`);
+          try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        url: url,
+                        question: question || 'Tell me about this website'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    addMessage('bot', `Error: ${data.error}`);
+                } else {
+                    addMessage('bot', data.ai_response);
+                    // You could also display the raw data if you want:
+                    // addMessage('bot', JSON.stringify(data.website_data, null, 2));
+                }
+            } catch (error) {
+                addMessage('bot', `Error: ${error.message}`);
+            }   document.getElementById('questionInput').value = '';
+        }
+    </script>
 
 </body>
 </html>
