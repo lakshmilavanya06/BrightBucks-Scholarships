@@ -145,15 +145,17 @@ body {
     display: inline-flex;
     align-items: center;
     margin: 10px 20px;
-}.profile2 {
-    display: inline-flex;
-    align-items: center;
-    margin: 10px 20px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      padding: 0 2vw;
+      box-sizing: border-box;
 }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
+     width: 18vw; /* 5 images × 18vw + spacing fits the screen */
+      height: auto;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
