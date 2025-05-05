@@ -170,11 +170,11 @@ body {
 
 /* Adjust the credits-new class to work with new layout */
 .credits-new {
-     text-align: center;
+     text-align: left;
       text-decoration: none;
       transition: transform 0.3s;
      margin-top: 10px;
-      font-weight: 600;
+      font-weight: 400;
     color: #241d4c;
     margin: 0; /* Remove default margins */
 }
