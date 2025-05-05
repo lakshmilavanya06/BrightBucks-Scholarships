@@ -13,13 +13,14 @@ const scholarships = {
                 name: "KVPY", 
                 description: "Kishore Vaigyanik Protsahan Yojana for students with an interest in science.", 
                 criteria: "Students in 10th grade with a strong interest in science.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.kvpy.iisc.ernet.in/"
             },
             {
                 name: "National Means-cum-Merit Scholarship", 
                 description: "For students from economically weaker sections.", 
                 criteria: "Must have scored at least 55% in 8th grade.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.gov.in/"
             },
             {
@@ -47,28 +48,28 @@ const scholarships = {
                 name: "Telangana Epass", 
                 description: "For students in Telangana based on merit and financial need.", 
                 criteria: "Students in 10th grade.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://telanganaepass.cgg.gov.in/"
             },
             {
                 name: "Kerala Scholarship", 
                 description: "For students in Kerala based on merit.", 
                 criteria: "Students in 10th grade.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.scholarships.kerala.gov.in/"
             },
             {
                 name: "Punjab Scholarship", 
                 description: "For students in Punjab based on merit.", 
                 criteria: "Students in 10th grade.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://punjabscholarships.gov.in/"
             },
             {
                 name: "Haryana Scholarship", 
                 description: "For students in Haryana based on merit.", 
                 criteria: "Students in 10th grade.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://haryanascholarships.gov.in/"
             }
         ],
@@ -77,70 +78,70 @@ const scholarships = {
                 name: "PM Scholarship Scheme", 
                 description: "For meritorious students from economically weaker sections.", 
                 criteria: "Passed 12th with at least 60% marks.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.aicte-india.org/"
             },
             {
                 name: "Central Sector Scheme of Scholarships", 
                 description: "For college and university students from low-income families.", 
                 criteria: "Must have scored at least 80% in 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.gov.in/"
             },
             {
                 name: "Post Matric Scholarship", 
                 description: "For students from minority communities.", 
                 criteria: "Must have scored at least 50% in 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.gov.in/"
             },
             {
                 name: "UP Scholarship", 
                 description: "For students in Uttar Pradesh based on merit and financial need.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.up.gov.in/"
             },
             {
                 name: "Maharashtra Scholarship", 
                 description: "For students in Maharashtra based on merit.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.maharashtrascholarships.gov.in/"
             },
             {
                 name: "Rajasthan Scholarship", 
                 description: "For students in Rajasthan based on merit.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://rajpms.nic.in/"
             },
             {
                 name: "Telangana Epass", 
                 description: "For students in Telangana based on merit and financial need.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://telanganaepass.cgg.gov.in/"
             },
             {
                 name: "Kerala Scholarship", 
                 description: "For students in Kerala based on merit.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.scholarships.kerala.gov.in/"
             },
             {
                 name: "Punjab Scholarship", 
                 description: "For students in Punjab based on merit.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://punjabscholarships.gov.in/"
             },
             {
                 name: "Haryana Scholarship", 
                 description: "For students in Haryana based on merit.", 
                 criteria: "Students who have passed 12th.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://haryanascholarships.gov.in/"
             }
         ],
@@ -149,70 +150,70 @@ const scholarships = {
                 name: "INSPIRE Scholarship", 
                 description: "For young scientists in India.", 
                 criteria: "Top 1% scorers in 12th with science background.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://online-inspire.gov.in/"
             },
             {
                 name: "UGC Scholarship", 
                 description: "For undergraduate students pursuing higher education.", 
                 criteria: "Based on merit and financial need.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.ugc.ac.in/"
             },
             {
                 name: "National Scholarship for Higher Education", 
                 description: "For students pursuing higher education in various fields.", 
                 criteria: "Based on academic performance.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.gov.in/"
             },
             {
                 name: "Post Matric Scholarship for SC/ST", 
                 description: "For SC/ST students pursuing undergraduate studies.", 
                 criteria: "Based on merit and financial need.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.gov.in/"
             },
             {
                 name: "AICTE Scholarship", 
                 description: "For students pursuing technical education.", 
                 criteria: "Based on merit and financial need.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.aicte-india.org/"
             },
             {
                 name: "Maharashtra Scholarship", 
                 description: "For undergraduate students in Maharashtra.", 
                 criteria: "Based on merit.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link:  "https://www.maharashtrascholarships.gov.in/"
             },
             {
                 name: "UP Scholarship", 
                 description: "For undergraduate students in Uttar Pradesh.", 
                 criteria: "Based on merit and financial need.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://scholarships.up.gov.in/"
             },
             {
                 name: "Rajasthan Scholarship", 
                 description: "For undergraduate students in Rajasthan.", 
                 criteria: "Based on merit.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://rajpms.nic.in/"
             },
             {
                 name: "Telangana Epass", 
                 description: "For undergraduate students in Telangana based on merit and financial need.", 
                 criteria: "Based on academic performance.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://telanganaepass.cgg.gov.in/"
             },
             {
                 name: "Kerala Scholarship", 
                 description: "For undergraduate students in Kerala based on merit.", 
                 criteria: "Based on academic performance.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.scholarships.kerala.gov.in/"
             }
         ],
@@ -221,21 +222,21 @@ const scholarships = {
                 name: "Fulbright-Nehru Scholarship", 
                 description: "For studies in the USA.", 
                 criteria: "Must have completed undergraduate studies with good academic record.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                 Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.usief.org.in/"
             },
             {
                 name: "National Postgraduate Scholarship", 
                 description: "For postgraduate students in various fields.", 
                 criteria: "Based on academic performance.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.education.gov.in/"
             },
             {
                 name: "UGC Scholarship", 
                 description: "For postgraduate students pursuing higher education.", 
                 criteria: "Based on merit and financial need.",
-                                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
+                Registration: " To apply, students must register on the official scholarship portal, fill in personal and academic details, upload required documents, and submit the form for verification and approval.",
                 link: "https://www.ugc.ac.in/"
             },
             {
