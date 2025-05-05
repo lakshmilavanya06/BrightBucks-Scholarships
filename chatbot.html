@@ -81,65 +81,76 @@
       text-align: center;
     }
   </style>
+</head>
 <body>
 
 <div class="chat-container">
   <h2 style="color:#007BFF;">AI Chatbot</h2>
   <div class="messages" id="chatBox"></div>
   <input type="text" id="userInput" placeholder="Type your message..." />
-  <button onclick="sendMessage()">Send</button>
+  <button id="sendBtn">Send</button>
 </div>
 
 <script>
-  function sendMessage() {
+  document.addEventListener('DOMContentLoaded', function () {
     const input = document.getElementById('userInput');
-    const message = input.value.trim();
-    if (message === '') return;
-
+    const sendBtn = document.getElementById('sendBtn');
     const chatBox = document.getElementById('chatBox');
-    chatBox.innerHTML += `<div class="message user">${message}</div>`;
 
-    const botReply = getBotReply(message);
-    setTimeout(() => {
-      chatBox.innerHTML += `<div class="message bot">${botReply}</div>`;
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }, 500);
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') sendMessage();
+    });
 
-    input.value = '';
+    function sendMessage() {
+      const message = input.value.trim();
+      if (message === '') return;
 
-  function getBotReply(input) {
-  const msg = input.toLowerCase();
+      chatBox.innerHTML += `<div class="message user">${message}</div>`;
 
-  if (msg.includes("hello") || msg.includes("hi"))
-    return "Hi there! Welcome to BrightBucks. How can I assist you today?";
+      const botReply = getBotReply(message);
+      setTimeout(() => {
+        chatBox.innerHTML += `<div class="message bot">${botReply}</div>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }, 500);
 
-  if (msg.includes("help"))
-    return "Sure! You can ask me about scholarships, eligibility, how to apply, deadlines, and more.";
+      input.value = '';
+    }
 
-  if (msg.includes("scholarship") && msg.includes("eligibility"))
-    return "To check your eligibility, please select your qualification (10th, UG, PG) on the homepage.";
+    function getBotReply(input) {
+      const msg = input.toLowerCase();
 
-  if (msg.includes("how to apply") || msg.includes("apply for scholarship"))
-    return "To apply, click the 'Apply Now' button next to the scholarship you're interested in. It will redirect you to the official site.";
+      if (msg.includes("hello") || msg.includes("hi"))
+        return "Hi there! Welcome to BrightBucks. How can I assist you today?";
 
-  if (msg.includes("deadline") || msg.includes("last date"))
-    return "Deadlines vary by scholarship. Click on a scholarship to view its details and application deadline.";
+      if (msg.includes("help"))
+        return "Sure! You can ask me about scholarships, eligibility, how to apply, deadlines, and more.";
 
-  if (msg.includes("types") || msg.includes("categories"))
-    return "We list both Government and Private scholarships, sorted by qualification level: 10th Pass, Undergraduate, and Postgraduate.";
+      if (msg.includes("scholarship") && msg.includes("eligibility"))
+        return "To check your eligibility, please select your qualification (10th, UG, PG) on the homepage.";
 
-  if (msg.includes("search") || msg.includes("filter"))
-    return "Use the search bar to filter scholarships by keywords like 'engineering', 'SC/ST', 'merit', etc.";
+      if (msg.includes("how to apply") || msg.includes("apply for scholarship"))
+        return "To apply, click the 'Apply Now' button next to the scholarship you're interested in. It will redirect you to the official site.";
 
-  if (msg.includes("contact") || msg.includes("support"))
-    return "For any queries, please contact our support via the contact form at the bottom of the homepage.";
+      if (msg.includes("deadline") || msg.includes("last date"))
+        return "Deadlines vary by scholarship. Click on a scholarship to view its details and application deadline.";
 
-  if (msg.includes("website") || msg.includes("navigate"))
-    return "You can browse scholarships by category, use the search bar, or click on buttons to visit official application portals.";
+      if (msg.includes("types") || msg.includes("categories"))
+        return "We list both Government and Private scholarships, sorted by qualification level: 10th Pass, Undergraduate, and Postgraduate.";
 
-  return "I'm a basic assistant for BrightBucks. Try asking things more relavent to BrightBucks";
-} 
+      if (msg.includes("search") || msg.includes("filter"))
+        return "Use the search bar to filter scholarships by keywords like 'engineering', 'SC/ST', 'merit', etc.";
+
+      if (msg.includes("contact") || msg.includes("support"))
+        return "For any queries, please contact our support via the contact form at the bottom of the homepage.";
+
+      if (msg.includes("website") || msg.includes("navigate"))
+        return "You can browse scholarships by category, use the search bar, or click on buttons to visit official application portals.";
+
+      return "I'm a basic assistant for BrightBucks. Try asking things more relevant to BrightBucks.";
+    }
   });
 </script>
+
 </body>
 </html>
