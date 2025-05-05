@@ -176,7 +176,7 @@ body {
      margin-top: 10px;
       font-weight: 400;
     color: #241d4c;
-    margin: 0; /* Remove default margins */
+    /* Remove default margins */
 }
 
 .credits-link {
